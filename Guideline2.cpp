@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int main(){
     int num;
     cout<<"Enter number : ";
@@ -18,3 +19,9 @@ int main(){
 cout<<"Reversed number is : "<<rev<<endl;
 
 }
+
+/* OUTPUT
+Enter number : 123
+Original Number was : 123
+Reversed number is : 321
+*/

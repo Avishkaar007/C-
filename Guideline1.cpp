@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// to find sum and product of digits of a number
+
 int main(){
     int num;
     cout<<"Enter number : ";

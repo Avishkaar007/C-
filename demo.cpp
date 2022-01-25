@@ -1,10 +1,10 @@
-#include <iostream>
+#include <istream>
+#include <ostream>
 using namespace std;
 int main(){
-    int a=1;
-    cout<<"a :";
-    cin>>a;
-    while (a>0){
-    cout<<"hello world";
-        }
+istream reader;
+ostream printer;
+int num;
+reader.in(num);
+printerout(num++);
 }
