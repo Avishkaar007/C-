@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int main(){
     int a;
     int cnt=1;
@@ -15,3 +16,13 @@ int main(){
     }
     return 0;
 }
+
+/* OUTPUT
+Enter number of lines : 6
+*
+***
+*****
+*******
+*********
+***********
+*/

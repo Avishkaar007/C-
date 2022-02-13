@@ -80,37 +80,30 @@ void average(int array[],int length){
 }
 void choice(int array[],int length){
     int option;
-    cout<<" 1 : Even Elements \n 2 : Odd Elements \n 3 : Sum of all elements \n 4 : Average of all elements \n 5:Max and Minimum from Array \n 6:Duplicate \n 7 : Reverse array ";
+    cout<<" 0: Quit ,       1 : Even Elements \n 2 : Odd Elements\t3 : Sum of all elements \n";
+    cout<<" 4 : Average of all elements\t5:Max and Minimum from Array \n 6:Duplicate \t 7 : Reverse array \n 10:New Array Input ";
     cout<<"\nEnter what operation you want : ";
     cin>>option;
-    if (option==1)
-    {
+
+    if (option==0)
+        exit;
+    
+    else if (option==1)
         even(array,length);
-    }
     else if (option==2)
-    {
         odd(array,length);
-    }
     else if (option==3)
-    {
         sum(array,length);
-    }
     else if(option==4)
-    {
         average(array,length);
-    }
     else if(option==5)
-    {
         max_min(array,length);
-    }
     else if(option==6)
-    {
         duplicate(array,length);
-    }
     else if(option==7)
-    {
         reverse(array,length);
-    }
+    else if (option==10)
+        input();
 }
 void max_min(int array[],int length){
     int max_val=array[0];
@@ -130,23 +123,32 @@ void max_min(int array[],int length){
     choice(array,length);
 }
 void duplicate(int array[],int length)
+// function to remove duplicate elements and using reduced array
 {
     
-    int arr[]={};
     for(int elem=0;elem<length;elem++)
     {
 
-        for(int elem_arr=0;elem_arr<length;elem_arr++)
+        for(int elem_arr=elem+1;elem_arr<length;elem_arr++)
         {
-            if (array[elem]==arr[elem_arr])
+            if (array[elem]==array[elem_arr] )
+            { 
+                int shift=elem_arr;
+            while(shift<length)
             {
-                break;
+                array[shift]=array[shift+1];
+                shift++;
             }
-        
+            length--;
+            
+            }
         }
+            
 
     }
-    
+    print(array,length);
+    cout<<"\nAssuming we now take reduced array \n";
+    choice(array, length);
 
 }
 void print(int array[],int length)
