@@ -3,7 +3,8 @@
         "*.cpp": "cpp",
         "iostream": "cpp",
         "array": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "initializer_list": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }
