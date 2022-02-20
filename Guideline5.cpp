@@ -9,5 +9,7 @@ void check_pallindrome()
 
 int main()
 {
+    
+}
 
 }

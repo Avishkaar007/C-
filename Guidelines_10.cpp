@@ -80,8 +80,10 @@ void average(int array[],int length){
 }
 void choice(int array[],int length){
     int option;
-    cout<<" 0: Quit ,       1 : Even Elements \n 2 : Odd Elements\t3 : Sum of all elements \n";
-    cout<<" 4 : Average of all elements\t5:Max and Minimum from Array \n 6:Duplicate \t 7 : Reverse array \n 10:New Array Input ";
+    cout<<"-------------------------------------------------------------";
+    cout<<"\n0: Quit ,  1 : Even Elements \n 2 : Odd Elements\t3 : Sum of all elements \n";
+    cout<<" 4 : Average of all elements\t5:Max and Minimum from Array \n 6:Duplicate \t 7 : Reverse array \n 10:New Array Input\n ";
+    cout<<"-------------------------------------------------------------";
     cout<<"\nEnter what operation you want : ";
     cin>>option;
 
@@ -169,4 +171,108 @@ void reverse(int array[],int length)
         cout<<","<<array[elem];
     }
     cout<<"]";
+    choice(array,length);
 }
+
+/* Output
+Enter length of Array 6
+Enter elements 1 2 3 3 5 6
+-------------------------------------------------------------
+0: Quit ,  1 : Even Elements
+ 2 : Odd Elements       3 : Sum of all elements
+ 4 : Average of all elements    5:Max and Minimum from Array
+ 6:Duplicate     7 : Reverse array
+ 10:New Array Input
+ -------------------------------------------------------------
+Enter what operation you want : 1
+
+2 6
+-------------------------------------------------------------
+0: Quit ,  1 : Even Elements
+ 2 : Odd Elements       3 : Sum of all elements
+ 4 : Average of all elements    5:Max and Minimum from Array
+ 6:Duplicate     7 : Reverse array
+ 10:New Array Input
+ -------------------------------------------------------------
+Enter what operation you want : 2
+
+1 3 3 5
+
+-------------------------------------------------------------
+0: Quit ,  1 : Even Elements
+ 2 : Odd Elements       3 : Sum of all elements
+ 4 : Average of all elements    5:Max and Minimum from Array
+ 6:Duplicate     7 : Reverse array
+ 10:New Array Input
+ -------------------------------------------------------------
+Enter what operation you want : 3
+Sum of all terms in array is : 20
+
+-------------------------------------------------------------
+0: Quit ,  1 : Even Elements
+ 2 : Odd Elements       3 : Sum of all elements
+ 4 : Average of all elements    5:Max and Minimum from Array
+ 6:Duplicate     7 : Reverse array
+ 10:New Array Input
+ -------------------------------------------------------------
+Enter what operation you want : 4
+Average of all terms is : 3.33333
+
+-------------------------------------------------------------
+0: Quit ,  1 : Even Elements
+ 2 : Odd Elements       3 : Sum of all elements
+ 4 : Average of all elements    5:Max and Minimum from Array
+ 6:Duplicate     7 : Reverse array
+ 10:New Array Input
+ -------------------------------------------------------------
+Enter what operation you want : 5
+
+Maximum is : 6
+Minimum is : 1
+-------------------------------------------------------------
+0: Quit ,  1 : Even Elements
+ 2 : Odd Elements       3 : Sum of all elements
+ 4 : Average of all elements    5:Max and Minimum from Array
+ 6:Duplicate     7 : Reverse array
+ 10:New Array Input
+ -------------------------------------------------------------
+Enter what operation you want : 6
+[1,2,3,5,6]
+Assuming we now take reduced array
+-------------------------------------------------------------
+0: Quit ,  1 : Even Elements
+ 2 : Odd Elements       3 : Sum of all elements
+ 4 : Average of all elements    5:Max and Minimum from Array
+ 6:Duplicate     7 : Reverse array
+ 10:New Array Input
+ -------------------------------------------------------------
+Enter what operation you want : 7
+[6,5,3,2,1]-------------------------------------------------------------
+0: Quit ,  1 : Even Elements
+ 2 : Odd Elements       3 : Sum of all elements
+ 4 : Average of all elements    5:Max and Minimum from Array
+ 6:Duplicate     7 : Reverse array
+ 10:New Array Input
+ -------------------------------------------------------------
+Enter what operation you want : 10
+Enter length of Array 4
+Enter elements 1 2 3 4
+-------------------------------------------------------------
+0: Quit ,  1 : Even Elements
+ 2 : Odd Elements       3 : Sum of all elements
+ 4 : Average of all elements    5:Max and Minimum from Array
+ 6:Duplicate     7 : Reverse array
+ 10:New Array Input
+ -------------------------------------------------------------
+Enter what operation you want : 1
+
+2 4
+-------------------------------------------------------------
+0: Quit ,  1 : Even Elements
+ 2 : Odd Elements       3 : Sum of all elements
+ 4 : Average of all elements    5:Max and Minimum from Array
+ 6:Duplicate     7 : Reverse array
+ 10:New Array Input
+ -------------------------------------------------------------
+Enter what operation you want : 0
+*/

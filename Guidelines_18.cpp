@@ -1,17 +1,26 @@
 #include <iostream>
 using namespace std;
-int fibonacci(int num);
-
+int fibonacci_r(int num);
+int fibonacci_i(int num);
 
 int main(){
    int num;
    cout<<"Enter number of terms in series : ";
    cin>>num;
-fibonacci(num);
+fibonacci_i(num);
+fibonacci_r(num);
 
 }
+int fibonacci_r(int num){
+    int num1=0; // 0 1 1 2 3 5 8 13
+    int num2=1;
+    int count=0;
+    
+    
+    }
 
-int fibonacci(int num){
+
+int fibonacci_i(int num){
     int num1=0; // 0 1 1 2 3 5 8 13
     int num2=1;
     
@@ -23,7 +32,7 @@ int fibonacci(int num){
     
     num1=temp2;
     num2=temp2+temp1;
-    cout<<" term "<<++cnt<<" : "<<num2<<endl;
+    cout<<"Term "<<++cnt<<" : "<<num2<<endl;
     
     }
 

@@ -8,9 +8,14 @@ int main(){
     cout<<"Factors of "<<num<<" are ";
     while (denom<=(num/2)){
         if (num%denom==0){
-            cout<<"   "<<denom;}
+            cout<<" "<<denom;}
         denom++;
         
     }
     return 0;
 }
+
+/* Output
+Enter Number 100
+Factors of 100 are  1 2 4 5 10 20 25 50
+*/
