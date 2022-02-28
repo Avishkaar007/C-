@@ -47,22 +47,22 @@ int main()
 
 
 {  //1
-     /* int countA=0,countB=1,countC=2;
+     /* int countA=0,countE=0,countI=0;
     char ch;
     cout<<"Enter character ";
     cin>>ch;
     switch(ch)
     {
         case ('A') :
-        case ('a'):{cout <<++countA  << endl;
+        case ('a'):{countA++;
                    break;}
-        case ('B') :
-        case ('b'):{cout <<++countB  << endl;
+        case ('E') :
+        case ('e'):{countE++;
                    break;}
-        case ('C') :
-        case ('c'):{cout <<++countC  << endl;
+        case ('I') :
+        case ('i'):{countI++;
                    break;}
-        default:cout<<"Error-Not A,B, or C\n";
+        default:cout<<"Error-Not A,E, or I\n";
     }*/
 
 

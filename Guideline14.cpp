@@ -13,7 +13,7 @@ int main(){
 float radius;
 double area,circumference;
     
-    cout<<"Enter Radius of Circle";
+    cout<<"Enter Radius of Circle : ";
     cin>>radius;
     circle(radius,area,circumference);
     cout<<"Area is "<<area<<" sq units "<<endl;
@@ -22,3 +22,8 @@ double area,circumference;
     return 0;
 }
 
+/* Output
+Enter Radius of Circle : 10.1
+Area is 320.474 sq units 
+Circumference is 63.4601 units
+*/

@@ -1,30 +1,79 @@
-#include <istream>
-#include <ostream>
+#include <iostream>
+#include <cmath>
 using namespace std;
-int main(){
-istream reader;
-ostream printer;
-int num;
-reader.in(num);
-printerout(num++);
-}
 
-
-cout<<"Enter no of rows in Matrix : ";
-    cin>>c_rows;
-    cout<<"Enter no of columns in Matrix : ";
-    cin>>c_col;
-
-void transpose(int arr[3][3])
-{
- int temp=0;
- for(int row=0;row<3;row++)
- {
-    for (int col=0;col<3;col++)
-    
-    {
-        cout<<' '<<arr[col][row];
-             
+class A{
+    int a;
+    public:
+    A(){
+        cout<<"\nConstructor A";
     }
-    cout<<'\n';
+    ~A(){
+        cout<<"\nDestructor A";
+    }
+
+
+};  // A
+class B:public A{
+    int b;
+    public:
+        B(){
+            cout<<"\nConstructor B";
+        }
+        ~B(){
+            cout<<"\nDestructor B";
+        }
+
+};
+
+class C:public B{
+ int c;
+    public:
+        C(){
+            
+            cout<<"\nConstructor C";
+        }
+        ~C(){
+            cout<<"\nDestructor C";
+        }
+
+};
+class D:public C{
+ int d;
+    public:
+        D(){
+            
+            cout<<"\nConstructor D";
+        }
+        ~D(){
+            cout<<"\nDestructor D";
+        }
+
+};
+
+ int main()
+ {
+    D obj;
  }
+
+ /* Sequence of object creation and deletion
+ Constructor A
+Constructor B
+Constructor C
+Constructor D
+Destructor D
+Destructor C
+Destructor B
+Destructor A
+*/
+
+
+
+// int main(){
+// doudle a,b,c;
+// cout<<" Enter <a>,<b> : ";
+// cin>>a>>b;
+// double expr=a*a+b*b -2*a*b;
+// c=pow(expr,0.5);
+// cout<<" c = "<<c<<endl;
+// }//main

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
+
 int i1=-254;
 float f1=53.6456;
 int i2=8;

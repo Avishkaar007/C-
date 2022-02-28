@@ -8,22 +8,26 @@ int main(){
    cout<<"Enter number of terms in series : ";
    cin>>num;
 fibonacci_i(num);
-fibonacci_r(num);
-
+int r_count=0;
+cout<<"\nUsing Recursion \n";
+for(r_count;r_count<num;r_count++)
+{
+cout<<" Term  "<<r_count+1<<" : " <<fibonacci_r(r_count)<<endl;
+}
 }
 int fibonacci_r(int num){
-    int num1=0; // 0 1 1 2 3 5 8 13
-    int num2=1;
-    int count=0;
     
-    
-    }
+    if (num==0||num==1)
+    {return num;}
+    else
+    {return fibonacci_r(num-1)+fibonacci_r(num-2);}
+}
 
 
 int fibonacci_i(int num){
     int num1=0; // 0 1 1 2 3 5 8 13
     int num2=1;
-    
+    cout<<"Using Iteration \n";
     cout<<"Term 1 : "<<num1<<endl<<"Term 2 : "<<num2<<endl;
     int cnt=2;
     for (cnt;cnt<num; ){
@@ -38,4 +42,26 @@ int fibonacci_i(int num){
 
     
 }
+
+/*
+Enter number of terms in series : 7
+Using Iteration 
+Term 1 : 0
+Term 2 : 1
+Term 3 : 1
+Term 4 : 2
+Term 5 : 3
+Term 6 : 5
+Term 7 : 8
+
+Using Recursion
+ Term  1 : 0
+ Term  2 : 1
+ Term  3 : 1
+ Term  4 : 2
+ Term  5 : 3
+ Term  6 : 5
+ Term  7 : 8
+ */
+
 
