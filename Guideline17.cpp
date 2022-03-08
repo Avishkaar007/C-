@@ -3,13 +3,14 @@ using namespace std;
 
 void print(int array[],int length)
 {
+    cout<< "The sorted merged array is : ";
     cout<<"[";
     cout<<array[0];
     for(int elem=1;elem<length;elem++){
         cout<<','<<array[elem];
     }
     cout<<"]";
-}
+}//print
 
 int merge(int arr1[],int sz1,int arr2[],int sz2)
 {
@@ -38,7 +39,7 @@ int merge(int arr1[],int sz1,int arr2[],int sz2)
     }
     print(arr3,sz1+sz2);
     
-}
+}//merge
 
 int main()
 {
@@ -47,6 +48,7 @@ int main()
     cout<<"Enter length of Array 1 : ";
     cin>>length;
     int arr1[length]={};
+    cout<<"Enter Elements of Array 1 : ";
     for(int term=0;term<length;term++)
     {
         cin>>arr1[term];
@@ -54,6 +56,7 @@ int main()
     cout<<"Enter length of array 2 :  ";
     cin>>length;
     int arr2[length]={};
+    cout<<"Enter Elements of Array 2 : ";
     for(int term=0;term<length;term++)
     {
         cin>>arr2[term];
@@ -63,4 +66,12 @@ int main()
     int sz2=sizeof(arr2)/4;
     
     merge(arr1,sz1,arr2,sz2);
-} 
+} //main
+
+/* OUTPUT
+Enter length of Array 1 : 3 
+Enter Elements of Array 1 : 1 2 3
+Enter length of array 2 :  4
+Enter Elements of Array 2 : 2 3 4 5
+The sorted merged array is : [1,2,2,3,3,4,5]
+*/

@@ -45,3 +45,9 @@ int main(){
     
 }
     
+//For sake of time , I have taken only 2 students
+/*
+"Content of file 25_o.txt"
+1 Abhishek 12 1 421
+2 Ajay 12 1 432
+*/

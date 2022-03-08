@@ -18,11 +18,10 @@ int main(){
 }
 
 /* OUTPUT
-Enter number of lines : 6
+Enter number of lines : 5
 *
 ***
 *****
 *******
 *********
-***********
 */

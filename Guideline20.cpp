@@ -23,10 +23,17 @@ int main()
 
 {
     int num1,num2;
-    cout<<"Enter 'num1 num2' , first bigger then smaller number : ";
+    cout<<"Enter <num1>,<num2> , first bigger then smaller number : ";
     cin>> num1>>num2;
     int gcd_r=GCD_r(num1,num2);
     int gcd_i=GCD_i(num1,num2);
     printf("\nGCD  of %d, %d via recusrion is %d  ",num1,num2,gcd_r);
     printf("\nGCD of %d, %d via iteration is  %d ",num1,num2,gcd_i);
 }
+
+/* OUTPUT
+Enter <num1>,<num2> , first bigger then smaller number : 117 13
+
+GCD  of 117, 13 via recusrion is 13
+GCD of 117, 13 via iteration is  13
+*/

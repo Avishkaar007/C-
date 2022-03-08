@@ -26,4 +26,10 @@ int main()
     return 0;
 }
 
+/* OUTPUT
+Enter number of elements : 5
+Enter elements : 1 2 2 3 4
+The sum of elements is : 12
+
+*/
 

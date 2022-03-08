@@ -19,7 +19,7 @@ int main(){
 
 void input()
 {
-    int length;
+    int length=0;
     cout<<"Enter length of Array ";
     cin>>length;
     int array[length];
@@ -88,7 +88,7 @@ void choice(int array[],int length){
     cin>>option;
 
     if (option==0)
-        exit;
+        exit(100);
     
     else if (option==1)
         even(array,length);
@@ -128,25 +128,22 @@ void duplicate(int array[],int length)
 // function to remove duplicate elements and using reduced array
 {
     
-    for(int elem=0;elem<length;elem++)
+    for(int elem=0;elem<length-1;elem++)
     {
-
-        for(int elem_arr=elem+1;elem_arr<length;elem_arr++)
-        {
-            if (array[elem]==array[elem_arr] )
-            { 
-                int shift=elem_arr;
-            while(shift<length)
+        int elem_arr=elem;
+        while (array[elem]==array[elem+1] && (elem_arr<length))
+        {               
+            int shift=elem+1;
+            while (shift<length-1)
             {
                 array[shift]=array[shift+1];
                 shift++;
             }
-            length--;
-            
-            }
+        length--;
+        elem_arr++;
         }
+    
             
-
     }
     print(array,length);
     cout<<"\nAssuming we now take reduced array \n";
@@ -166,7 +163,7 @@ void print(int array[],int length)
 void reverse(int array[],int length)
 {
     cout<<"[";
-    cout<<array[length-1];
+    cout<<array[length-1];  
  for(int elem=length-2;elem>-1;elem--){
         cout<<","<<array[elem];
     }
